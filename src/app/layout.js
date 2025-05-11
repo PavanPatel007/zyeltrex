@@ -1,11 +1,7 @@
-import { DM_Sans, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header/Header";
-import FixedEmailLeft from "@/components/FixedEmailLeft/FixedEmailLeft";
 import Footer from "@/components/Footer/Footer";
-import CustomCursor from "@/components/CustomCursor/CustomCursor";
-import ElfsightWidget from "@/utils/script";
 import RootWrapper from "@/wrapper/RootWrapper";
+import { DM_Sans } from "next/font/google";
+import "./globals.css";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

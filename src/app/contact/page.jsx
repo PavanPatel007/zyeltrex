@@ -1,9 +1,32 @@
 import HeaderFull from "@/components/Header/HeaderFull";
+import { SEO_DATA, SEO_IMAGES } from "@/config/seo";
 import ContactForm from "@/pages/contact/ContactForm";
 
 export const metadata = {
-  title: "Contact - Zyeltrex Solutions",
-  description: "Zyeltrex Solutions",
+  title: SEO_DATA.contact.title,
+  description: SEO_DATA.contact.description,
+  keywords: SEO_DATA.contact.keywords,
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: SEO_DATA.contact.title,
+    description: SEO_DATA.contact.description,
+    url: SEO_DATA.contact.url,
+    siteName: SEO_DATA.siteName,
+    images: [SEO_IMAGES.default],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: SEO_DATA.twitterHandle,
+    creator: SEO_DATA.twitterHandle,
+    title: SEO_DATA.contact.title,
+    description: SEO_DATA.contact.description,
+    images: [SEO_IMAGES.default.url],
+  },
 };
 
 const Page = () => {

@@ -82,17 +82,19 @@ export default function HowWeWork() {
           {/* Timeline for desktop (lg) and larger screens */}
           <div className="lg:border-l-4 lg:border-primary/30 lg:ml-4 space-y-10 lg:space-y-10">
             {steps.map((step, index) => (
-              <div key={index} className="relative md:pl-10 step-card">
-                {/* Timeline icon */}
-                <span className="hidden lg:flex absolute -left-5 top-0 w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-md">
-                  <Icon icon={step.icon} className="w-5 h-5" />
-                </span>
+              <div key={index} className="w-full   md:pl-10 step-card">
+                <div className="">
+                  {/* Timeline icon */}
+                  <span className="hidden lg:flex absolute -left-5 top-0 w-10 h-10  items-center justify-center bg-primary text-white rounded-full shadow-md">
+                    <Icon icon={step.icon} className="w-5 h-5" />
+                  </span>
 
-                <div className="bg-white p-6 rounded-md shadow-md hover:shadow-lg transition-all">
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 mt-2">{step.description}</p>
+                  <div className=" p-6 border rounded-3xl border-gray-300  transition-all">
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 mt-2">{step.description}</p>
+                  </div>
                 </div>
               </div>
             ))}

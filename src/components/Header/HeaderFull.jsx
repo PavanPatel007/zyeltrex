@@ -190,11 +190,11 @@ const HeaderFull = () => {
 
       {/* Full Page Menu */}
       <div
-        className="menu-full fixed top-0 left-0 w-full h-full bg-black text-white z-50"
+        className="menu-full bg-gradient-to-br from-blue-900 via-purple-900 to-black fixed top-0 left-0 w-full h-full bg-black text-white z-50"
         style={{
           transform: "translateX(-100%)",
-          backgroundImage:
-            "linear-gradient(80deg, var(--primary) 1%, #000 30%)",
+          // backgroundImage:
+          //   "linear-gradient(80deg, var(--primary) 1%, #000 30%)",
         }}
       >
         <div className="flex justify-between items-center p-6 px-6 md:px-20">

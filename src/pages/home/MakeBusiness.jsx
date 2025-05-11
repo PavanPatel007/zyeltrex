@@ -39,7 +39,7 @@ const MakeBusiness = () => {
         {/* Step 1 */}
         <div
           ref={step1Ref}
-          className="p-6 bg-[#F9FAFB] rounded-2xl shadow-md hover:shadow-lg transition-all"
+          className="p-6  border rounded-3xl border-gray-300  hover:shadow-lg transition-all"
         >
           <h2 className="text-2xl md:text-3xl font-semibold text-black mb-4">
             Build a Strong Online Presence
@@ -54,7 +54,7 @@ const MakeBusiness = () => {
         {/* Step 2 */}
         <div
           ref={step2Ref}
-          className="p-6 bg-[#F9FAFB] rounded-2xl shadow-md hover:shadow-lg transition-all"
+          className="p-6  border rounded-3xl border-gray-300  hover:shadow-lg transition-all"
         >
           <h2 className="text-2xl md:text-3xl font-semibold text-black mb-4">
             Make Your Brand Stand Out
@@ -69,7 +69,7 @@ const MakeBusiness = () => {
         {/* Step 3 */}
         <div
           ref={step3Ref}
-          className="p-6 bg-[#F9FAFB] rounded-2xl shadow-md hover:shadow-lg transition-all"
+          className="p-6  border rounded-3xl border-gray-300  hover:shadow-lg transition-all"
         >
           <h2 className="text-2xl md:text-3xl font-semibold text-black mb-4">
             Scale with Your Community

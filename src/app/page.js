@@ -1,24 +1,35 @@
 // "use client";
 import CollaborationSection from "@/components/CollaborationSection/CollaborationSection";
-import FallingText from "@/components/FallingText/FallingText";
 import HeaderFull from "@/components/Header/HeaderFull";
-import ProjectsSlider from "@/components/ProjectsSlider/ProjectsSlider";
-import { projects } from "@/data/projects";
 import CreatingValuable from "@/pages/home/CreatingValuable";
 import Customized from "@/pages/home/Customized";
-import HomeHeroNewBlack from "@/pages/home/HomeHeroBlack";
-import HomeHeroSlider from "@/pages/home/HomeHeroSlider";
 import HomeTestimonials from "@/pages/home/HomeTestimonials";
 import HomeTextMarquee from "@/pages/home/HomeTextMarquee";
 import HowWeWork from "@/pages/home/HowWeWork";
 import ImageContentScroll from "@/pages/home/ImageContentScroll";
-import MakeBusiness from "@/pages/home/MakeBusiness";
-import Projects from "@/pages/work/Projects";
-import ProjectsBg from "@/pages/work/ProjectsBg";
+import HeroSection from "../pages/home/HomeHero";
+import { SEO_META_URL } from "@/config/seo";
 
 export const metadata = {
-  title: "Zyeltrex  Solutions",
-  description: "Zyeltrex  Solutions",
+  title: "Zyeltrex Solutions",
+  description:
+    "We design solutions that scale and perform for your digital future.",
+  metadataBase: new URL(SEO_META_URL),
+  openGraph: {
+    title: "Zyeltrex Solutions",
+    description:
+      "We design solutions that scale and perform for your digital future.",
+    url: SEO_META_URL,
+    siteName: "Zyeltrex Solutions",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zyeltrex Solutions",
+    description:
+      "We design solutions that scale and perform for your digital future.",
+  },
 };
 
 export default function Home() {
@@ -28,13 +39,16 @@ export default function Home() {
       {/* <HeaderCap /> */}
       <HeaderFull />
       {/* <HomeHeroSlider /> */}
-      <HomeHeroNewBlack />
+      {/* <HomeMain /> */}
+      <HeroSection />
+      {/* <HomeHeroNewBlack /> */}
       <CreatingValuable />
       {/* <HomeClientLogos /> */}
       <ImageContentScroll />
       <HowWeWork />
-      <MakeBusiness />
+      {/* <MakeBusiness /> */}
       <HomeTextMarquee />
+
       <Customized />
 
       {/* <div className="block">

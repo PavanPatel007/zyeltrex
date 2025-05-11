@@ -156,12 +156,12 @@ const HomeMain = () => {
                 Welcome To
               </p>
               <Image
-                src="/assets/logo/logo-white.svg"
+                src="/assets/logo/logo-black.png"
                 alt="zyeltrex"
                 width={200}
                 height={65}
                 priority
-                className="mt-10 flex justify-center items-center logo2"
+                className="mt-10 invert flex justify-center items-center logo2"
               />
             </div>
             <div className=" hidden md:block absolute w-full h-full text-white overflow-hidden pointer-events-none">
