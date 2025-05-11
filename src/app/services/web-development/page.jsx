@@ -41,7 +41,7 @@ const page = () => {
       <HeroSection
         title="Web Development"
         subtitle=""
-        gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
+        // gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
       />
       <WebAnalysis />
       <WebBenefits />

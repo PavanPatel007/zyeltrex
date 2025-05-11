@@ -42,7 +42,7 @@ const page = () => {
       <HeroSection
         title="AI/ML Development"
         subtitle=""
-        gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
+        // gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
       />
       <AIMLServicesCards />
       <TechStackSection />
