@@ -1,55 +1,36 @@
 import CTASection from "@/components/CTASection/CTASection";
 import HeaderFull from "@/components/Header/HeaderFull";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import { SEO_DATA, SEO_IMAGES } from "@/config/seo";
 import AIMLServicesCards from "@/pages/services/aimlservices/AIMLServicesCards";
 import IndustrySection from "@/pages/services/aimlservices/IndustrySection";
 import TechStackSection from "@/pages/services/aimlservices/TechStackSection";
 import React from "react";
 
 export const metadata = {
-  title: "AI/ML Development Services | Zyeltrex Web Solution",
-  description:
-    "Leverage the power of Artificial Intelligence and Machine Learning with Zyeltrex. We deliver custom AI/ML solutions to optimize processes and drive business growth.",
-  keywords: [
-    "AI Development",
-    "Machine Learning",
-    "Artificial Intelligence",
-    "AI Solutions",
-    "ML Solutions",
-    "Zyeltrex Web Solution",
-    "AI for Business",
-    "Predictive Analytics",
-    "Deep Learning",
-  ],
+  title: SEO_DATA.aiMLDevelopment.title,
+  description: SEO_DATA.aiMLDevelopment.description,
+  keywords: SEO_DATA.aiMLDevelopment.keywords,
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "AI/ML Development Services | Zyeltrex Web Solution",
-    description:
-      "Zyeltrex offers innovative AI/ML development services to help businesses optimize operations, improve decision-making, and unlock new opportunities with machine learning algorithms and artificial intelligence.",
-    url: "https://www.zyeltrex.com/services/ai-ml-development",
-    siteName: "Zyeltrex Web Solution",
-    images: [
-      {
-        url: "https://www.zyeltrex.com/assets/images/og-ai-ml.jpg", // Replace with your actual image
-        width: 1200,
-        height: 630,
-        alt: "AI/ML Development Services Banner",
-      },
-    ],
+    title: SEO_DATA.aiMLDevelopment.title,
+    description: SEO_DATA.aiMLDevelopment.description,
+    url: SEO_DATA.aiMLDevelopment.url,
+    siteName: SEO_DATA.siteName,
+    images: [SEO_IMAGES.default],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Zyeltrex",
-    creator: "@Zyeltrex",
-    title: "AI/ML Development Services | Zyeltrex Web Solution",
-    description:
-      "Unlock the potential of AI and ML with Zyeltrex. We provide tailored solutions to automate processes, enhance decision-making, and drive innovation for your business.",
-    images: ["https://www.zyeltrex.com/assets/images/og-ai-ml.jpg"], // Replace with your image
+    site: SEO_DATA.twitterHandle,
+    creator: SEO_DATA.twitterHandle,
+    title: SEO_DATA.aiMLDevelopment.title,
+    description: SEO_DATA.aiMLDevelopment.description,
+    images: [SEO_IMAGES.default.url],
   },
 };
 

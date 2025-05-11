@@ -1,14 +1,11 @@
-import OurPortfolio from "@/components/Portfolio/OurPortfolio";
 import QueTitle from "@/components/QueTitle/QueTitle";
+import RoundedLetsTalk from "@/components/RoundedLetsTalk/RoundedLetsTalk";
 import TechList from "@/components/TechList/TechList";
 import { mobileServices, webServices } from "@/data/webServices";
-import { ROUTE } from "@/routes/routes";
-import Link from "next/link";
+import Image from "next/image";
 import AnimatedHeader from "./AnimatedHeader";
 import HowCanWeDoIt from "./HowCanWeDoIt";
 import ToolsWeUse from "./ToolsWeUse";
-import RoundedLetsTalk from "@/components/RoundedLetsTalk/RoundedLetsTalk";
-import Image from "next/image";
 
 const Technology = () => {
   return (
@@ -34,8 +31,6 @@ const Technology = () => {
 
       <HowCanWeDoIt />
       <ToolsWeUse />
-
-      {/* <OurPortfolio /> */}
 
       {/* <div className="container rounded-xl py-14">
         <div className="relative group overflow-hidden  rounded-xl">

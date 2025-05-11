@@ -1,54 +1,37 @@
 import CollaborationSection from "@/components/CollaborationSection/CollaborationSection";
 import HeaderFull from "@/components/Header/HeaderFull";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import { SEO_DATA, SEO_IMAGES } from "@/config/seo";
 import AboutInfo from "@/pages/about/AboutInfo";
 import AboutInnovation from "@/pages/about/AboutInnovation";
 import AboutTalk from "@/pages/about/AboutTalk";
 
 export const metadata = {
-  title: "About Zyeltrex Web Solution",
-  description:
-    "Zyeltrex Web Solution is a digital agency offering innovative web development, design, and branding services to help businesses grow in the digital world.",
-  keywords: [
-    "Zyeltrex",
-    "Solutions",
-    "Web Development",
-    "Digital Agency",
-    "Branding",
-    "Web Design",
-  ],
+  title: SEO_DATA.about.title,
+  description: SEO_DATA.about.description,
+  keywords: SEO_DATA.about.keywords,
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "About Zyeltrex Web Solution",
-    description:
-      "Zyeltrex Web Solution is a digital agency offering innovative web development, design, and branding services to help businesses grow in the digital world.",
-    url: "https://www.zyeltrex.com/about",
-    siteName: "Zyeltrex Web Solution",
-    images: [
-      {
-        url: "https://www.zyeltrex.com/assets/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "About Zyeltrex Web Solution",
-      },
-    ],
+    title: SEO_DATA.about.title,
+    description: SEO_DATA.about.description,
+    url: SEO_DATA.about.url,
+    siteName: SEO_DATA.siteName,
+    images: [SEO_IMAGES.default],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Zyeltrex",
-    creator: "@Zyeltrex",
-    title: "About Zyeltrex Web Solution",
-    description:
-      "Zyeltrex Web Solution is a digital agency offering innovative web development, design, and branding services.",
-    images: ["https://www.zyeltrex.com/assets/images/og-image.jpg"],
+    site: SEO_DATA.twitterHandle,
+    creator: SEO_DATA.twitterHandle,
+    title: SEO_DATA.about.title,
+    description: SEO_DATA.about.description,
+    images: [SEO_IMAGES.default.url],
   },
 };
-
 const page = () => {
   return (
     <>

@@ -1,14 +1,12 @@
 "use client";
-import React from "react";
-import AnimatedHeaderMarketing from "./AnimatedHeader";
-import { designServices, marketingServices } from "@/data/webServices";
 import ServiceLink from "@/components/ServiceLink/ServiceLink";
-import HowCanWeMarketing from "./HowCanWeMarketing";
-import ToolsWeUseMarketing from "./ToolsWeUseMarketing";
-import OurPortfolio from "@/components/Portfolio/OurPortfolio";
-import Link from "next/link";
+import { marketingServices } from "@/data/webServices";
 import { ROUTE } from "@/routes/routes";
 import Image from "next/image";
+import Link from "next/link";
+import AnimatedHeaderMarketing from "./AnimatedHeader";
+import HowCanWeMarketing from "./HowCanWeMarketing";
+import ToolsWeUseMarketing from "./ToolsWeUseMarketing";
 
 const Marketing = () => {
   return (
@@ -52,7 +50,6 @@ const Marketing = () => {
       </section>
       <HowCanWeMarketing />
       <ToolsWeUseMarketing />
-      {/* <OurPortfolio /> */}
       <div className="container rounded-xl py-14">
         <div className="relative group overflow-hidden  rounded-xl">
           <div className="h-[300px] relative overflow-hidden  rounded-xl">
