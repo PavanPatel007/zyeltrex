@@ -41,7 +41,7 @@ const page = () => {
       <HeroSection
         title="About Us"
         subtitle="Transforming Ideas into Digital Solutions"
-        gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
+        // gradient="linear-gradient(80deg, var(--primary) 1%, #000 40%)"
       />
       {/* <AboutHome /> */}
       <AboutInfo />
