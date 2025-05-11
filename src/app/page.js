@@ -10,6 +10,7 @@ import HomeHeroNewBlack from "@/pages/home/HomeHeroBlack";
 import HomeHeroSlider from "@/pages/home/HomeHeroSlider";
 import HomeTestimonials from "@/pages/home/HomeTestimonials";
 import HomeTextMarquee from "@/pages/home/HomeTextMarquee";
+import HowWeWork from "@/pages/home/HowWeWork";
 import ImageContentScroll from "@/pages/home/ImageContentScroll";
 import MakeBusiness from "@/pages/home/MakeBusiness";
 import Projects from "@/pages/work/Projects";
@@ -31,6 +32,7 @@ export default function Home() {
       <CreatingValuable />
       {/* <HomeClientLogos /> */}
       <ImageContentScroll />
+      <HowWeWork />
       <MakeBusiness />
       <HomeTextMarquee />
       <Customized />
