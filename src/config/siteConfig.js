@@ -1,4 +1,4 @@
-export const SITE_BASE_URL = "https://zyeltrex.com";
+export const SITE_BASE_URL = "https://www.zyeltrex.com";
 
 export const siteInfo = {
   name: "Zyeltrex  Solutions",

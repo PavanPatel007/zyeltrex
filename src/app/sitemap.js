@@ -1,12 +1,8 @@
 import { SITE_BASE_URL } from "@/config/siteConfig";
+import { blogsData } from "@/data/blogs";
+import { ROUTE } from "@/routes/routes";
 
 const domain = SITE_BASE_URL;
-
-// const blogPosts = [
-//   { slug: "getting-started-with-nextjs", lastModified: "2024-12-01" },
-//   { slug: "how-to-seo-nextjs", lastModified: "2025-01-15" },
-//   { slug: "deploying-on-vercel", lastModified: "2025-04-10" },
-// ];
 
 export default function sitemap() {
   const now = new Date().toISOString();
@@ -19,31 +15,49 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${domain}/about`,
+      url: `${domain}${ROUTE.about}`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${domain}/projects`,
+      url: `${domain}${ROUTE.contact}`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${domain}/contact`,
+      url: `${domain}${ROUTE.services.webDevelopment}`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${domain}${ROUTE.services.appDevelopment}`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${domain}${ROUTE.services.aiMlDevelopment}`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${domain}${ROUTE.blog.root}`,
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.6,
     },
   ];
 
-  //   const blogRoutes = blogPosts.map((post) => ({
-  //     url: `${domain}/blog/${post.slug}`,
-  //     lastModified: new Date(post.lastModified).toISOString(),
-  //     changeFrequency: "monthly",
-  //     priority: 0.6,
-  //   }));
+  const blogRoutes = blogsData.map((post) => ({
+    url: `${domain}${ROUTE.blog.root}/${post.slug}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
 
-  return [...staticRoutes];
+  return [...staticRoutes, ...blogRoutes];
 }
