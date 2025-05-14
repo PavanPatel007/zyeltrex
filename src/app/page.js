@@ -2,7 +2,7 @@
 import CollaborationSection from "@/components/CollaborationSection/CollaborationSection";
 import HeaderFull from "@/components/Header/HeaderFull";
 import CreatingValuable from "@/pages/home/CreatingValuable";
-import Customized from "@/pages/home/Customized";
+// import Customized from "@/pages/home/Customized";
 import HomeTestimonials from "@/pages/home/HomeTestimonials";
 import HomeTextMarquee from "@/pages/home/HomeTextMarquee";
 import HowWeWork from "@/pages/home/HowWeWork";
@@ -49,7 +49,7 @@ export default function Home() {
       {/* <MakeBusiness /> */}
       <HomeTextMarquee />
 
-      <Customized />
+      {/* <Customized /> */}
 
       {/* <div className="block">
         <ProjectsBg
