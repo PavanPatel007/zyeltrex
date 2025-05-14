@@ -25,7 +25,7 @@ export const ROUTE = {
     root: "/marketing",
   },
   work: {
-    root: "/our-work",
+    root: "/portfolio",
   },
   client: {
     root: "/client",
